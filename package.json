@@ -1,0 +1,11 @@
+{
+  "name": "multilingual-emergency-safety-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multilingual Emergency & Safety Assistant",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "python -m app.server"
+  }
+}

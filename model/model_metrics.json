@@ -1,0 +1,228 @@
+{
+  "language_detector": {
+    "accuracy": 1.0,
+    "classes": [
+      "English",
+      "Tamil",
+      "Tanglish"
+    ],
+    "test_size": 72,
+    "train_size": 288,
+    "confusion_matrix": [
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        24
+      ]
+    ],
+    "classification_report": {
+      "English": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "Tamil": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "Tanglish": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 72.0
+      }
+    }
+  },
+  "emergency_classifier": {
+    "accuracy": 0.8194444444444444,
+    "classes": [
+      "Accident",
+      "Fire",
+      "Medical",
+      "Natural Disaster",
+      "Personal Safety",
+      "Police / Crime"
+    ],
+    "test_size": 72,
+    "train_size": 288,
+    "confusion_matrix": [
+      [
+        11,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        11
+      ]
+    ],
+    "classification_report": {
+      "Accident": {
+        "precision": 0.8461538461538461,
+        "recall": 0.7857142857142857,
+        "f1-score": 0.8148148148148148,
+        "support": 14.0
+      },
+      "Fire": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9655172413793104,
+        "support": 15.0
+      },
+      "Medical": {
+        "precision": 0.7777777777777778,
+        "recall": 0.875,
+        "f1-score": 0.8235294117647058,
+        "support": 16.0
+      },
+      "Natural Disaster": {
+        "precision": 0.8333333333333334,
+        "recall": 0.7142857142857143,
+        "f1-score": 0.7692307692307693,
+        "support": 7.0
+      },
+      "Personal Safety": {
+        "precision": 0.5714285714285714,
+        "recall": 0.5714285714285714,
+        "f1-score": 0.5714285714285714,
+        "support": 7.0
+      },
+      "Police / Crime": {
+        "precision": 0.7857142857142857,
+        "recall": 0.8461538461538461,
+        "f1-score": 0.8148148148148148,
+        "support": 13.0
+      },
+      "accuracy": 0.8194444444444444,
+      "macro avg": {
+        "precision": 0.8024013024013024,
+        "recall": 0.7876526251526251,
+        "f1-score": 0.7932226039054977,
+        "support": 72.0
+      },
+      "weighted avg": {
+        "precision": 0.8241419074752409,
+        "recall": 0.8194444444444444,
+        "f1-score": 0.8200533971325048,
+        "support": 72.0
+      }
+    }
+  },
+  "urgency_detector": {
+    "accuracy": 0.875,
+    "classes": [
+      "High",
+      "Medium"
+    ],
+    "test_size": 72,
+    "train_size": 288,
+    "confusion_matrix": [
+      [
+        57,
+        3
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "classification_report": {
+      "High": {
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1-score": 0.926829268292683,
+        "support": 60.0
+      },
+      "Medium": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1-score": 0.5714285714285714,
+        "support": 12.0
+      },
+      "accuracy": 0.875,
+      "macro avg": {
+        "precision": 0.7857142857142857,
+        "recall": 0.725,
+        "f1-score": 0.7491289198606272,
+        "support": 72.0
+      },
+      "weighted avg": {
+        "precision": 0.8650793650793651,
+        "recall": 0.875,
+        "f1-score": 0.867595818815331,
+        "support": 72.0
+      }
+    }
+  },
+  "metadata": {
+    "dataset": "dataset/emergency_dataset.xlsx",
+    "total_records": 360,
+    "test_split_ratio": 0.2,
+    "evaluation_note": "Model evaluation accuracy represents held-out test set performance across 72 test samples. It is strictly separate from runtime prediction confidence."
+  }
+}
